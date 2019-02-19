@@ -1,24 +1,33 @@
 import React, { Component } from 'react';
-import Ninja from './ninja';
+import Hunter from './hunter';
+import AddHunter from './addHunter';
 
 class App extends Component {
   state = {
-    ninjas: [
+    hunters: [
       {name: 'Dante', age: 45, sword: "Rebellion", devilTrigger: true},
       {name: 'Vergil', age: 45, sword: "Yamato", devilTrigger: true},
       {name: 'V', age: 25, sword: "Demon Summon", devilTrigger: true},
-      {name: 'Lady', age: 34, sword: "Rocket", devilTrigger: false},
-      {name: 'Nero', age: 25, sword: "Red Queen", devilTrigger: true},
+      {name: 'Lady', age: 34, sword: "Rocket", devilTrigger: false}
     ]
   }
+
+  addHunter = (hunter) => {
+    let hunters = [...this.state.hunters, hunter];
+    this.setState({
+      hunters: hunters
+    })
+  }
+
   render() {
-    console.log(this.state.ninjas)
+    console.log(this.state.hunters)
     return (
       <div className="App">
         <h1>React  App</h1>
         <p>Welcome!</p>
 
-        <Ninja hunters={this.state.ninjas} />
+        <Hunter hunters={this.state.hunters} />
+        <AddHunter addHunter={this.addHunter}/>
 
       </div>
     );

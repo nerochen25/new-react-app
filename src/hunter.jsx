@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Ninja = ({hunters}) => {
+const Hunter = ({hunters}) => {
       const hunterList = hunters.map((hunter,idx) => {
-        return hunter.devilTrigger ? (
+        return hunter.age > 20 ? (
             <ul key={idx}>
                 <li>Name: {hunter.name}</li>
                 <li>Age: {hunter.age}</li>
@@ -19,4 +19,4 @@ const Ninja = ({hunters}) => {
         )
 }
 
-export default Ninja;
+export default Hunter;
