@@ -8,7 +8,8 @@ class App extends Component {
       {name: 'Dante', age: 45, sword: "Rebellion", devilTrigger: true},
       {name: 'Vergil', age: 45, sword: "Yamato", devilTrigger: true},
       {name: 'V', age: 25, sword: "Demon Summon", devilTrigger: true},
-      {name: 'Lady', age: 34, sword: "Rocket", devilTrigger: false}
+      {name: 'Lady', age: 34, sword: "Rocket", devilTrigger: false},
+      {name: 'Nero', age: 25, sword: "Red Queen", devilTrigger: true},
     ]
   }
 
