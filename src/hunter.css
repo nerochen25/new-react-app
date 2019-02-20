@@ -1,0 +1,9 @@
+body {
+    background: grey;
+    transition: all 1.2s;
+}
+
+form {
+    background: blue;
+    padding: 20px;
+}
